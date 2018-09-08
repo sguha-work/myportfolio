@@ -152,7 +152,7 @@
 				if ( $('[data-section="' + section + '"]').length ) {
 			    	$('html, body').animate({
 			        	scrollTop: $('[data-section="' + section + '"]').offset().top - 55
-			    	}, 500);
+			    	}, 200);
 			   }
 
 		    if ( navbar.is(':visible')) {
@@ -217,13 +217,13 @@
 				setTimeout(function(){
 					$('.slider-text').removeClass('animated fadeInUp');
 					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
-				}, 500);
+				}, 200);
 			},
 			before: function(){
 				setTimeout(function(){
 					$('.slider-text').removeClass('animated fadeInUp');
 					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
-				}, 500);
+				}, 200);
 			}
 
 	  	});
@@ -270,7 +270,7 @@
 
 	var owlCrouselFeatureSlide = function() {
 		$('.owl-carousel').owlCarousel({
-			animateOut: 'fadeOut',
+		   animateOut: 'fadeOut',
 		   animateIn: 'fadeIn',
 		   autoplay: true,
 		   loop:true,
